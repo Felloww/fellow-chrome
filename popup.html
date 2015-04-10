@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Fellow</title>
+    <style type="text/css" media="screen">
+      html, body {
+        background-color: white;
+        font-family: Verdana, Helvetica, Arial;
+        font-size: 14px;
+      }
+
+      a { 
+        color: #95a5a6;
+        text-decoration: none;
+        font-size: 12px;
+        outline: 0;
+
+         }
+/* #### bootstrap Form #### */
+.theform {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 500px;
+    background: #FFF;
+    padding: 20px 30px 20px 30px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.theform input[type="text"], .bootstrap-frm textarea{
+    color: #888;
+    height: 20px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 80%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;    
+}
+
+.theform textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+
+.fellow-button {
+  background-color:#ce0a14;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:1px solid #ce0a14;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:17px;
+  padding:10px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ce0a14;
+}
+.fellow-button:hover {
+  background-color:#c41c3d;
+}
+.fellow-button:active {
+  position:relative;
+  top:1px;
+}
+
+.logo{
+  margin-top: 5px;
+  width:80%;
+}
+
+#container{
+  width:300px;
+}
+      
+    </style>
+        <script src="jquery.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+
+  </head>
+  <body>
+        <div id="container">
+        <center><img src="logo.png" class="logo"/></center>
+        <center><a href="http://joinfellow.com">Open Fellow</a></center>
+      <center><form id="new_artifact" class="theform">
+        <input type="text" name="artifact[name]" id="given_tags" placeholder="Tags (seperated by commas)">
+        <input type="submit" value="Add" id="testbutton" class="fellow-button ">
+      </form></center>
+    </div>
+
+  </body>
+</html>
+
