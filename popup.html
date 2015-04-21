@@ -58,11 +58,11 @@
 }
 
 .fellow-button {
-  background-color:#ce0a14;
+  background-color:#95a5a6;
   -moz-border-radius:28px;
   -webkit-border-radius:28px;
   border-radius:28px;
-  border:1px solid #ce0a14;
+  border:1px solid #95a5a6;
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
@@ -70,10 +70,13 @@
   font-size:17px;
   padding:10px 31px;
   text-decoration:none;
-  text-shadow:0px 1px 0px #ce0a14;
+  text-shadow:0px 1px 0px #95a5a6;
 }
 .fellow-button:hover {
-  background-color:#c41c3d;
+  background-color:#1ABC9C;
+    border:1px solid #1ABC9C;
+
+
 }
 .fellow-button:active {
   position:relative;
@@ -97,9 +100,9 @@
   <body>
         <div id="container">
         <center><img src="logo.png" class="logo"/></center>
-        <center><a href="http://joinfellow.com">Open Fellow</a></center>
+        <center><a href="http://joinfellow.com" target="_blank">Open Fellow</a></center>
       <center><form id="new_artifact" class="theform">
-        <input type="text" name="artifact[name]" id="given_tags" placeholder="Tags (seperated by commas)">
+        <input type="text" name="tag_list" id="given_tags" placeholder="Tags (seperated by commas)">
         <input type="submit" value="Add" id="testbutton" class="fellow-button ">
       </form></center>
     </div>
